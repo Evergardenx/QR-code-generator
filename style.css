@@ -1,0 +1,190 @@
+body {
+  height: 100vh;
+  background-color: #111729;
+  user-select: none;
+  background-image: url(/bg-illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right 74px top 80px;
+}
+
+main{
+  height: inherit;
+  padding: 0px 16px;
+}
+
+.commonButton {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem; /*16px*/
+  background-color: #3662e3;
+  color: #f2f5f9;
+  padding: 0px 40px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.commonButtonImage {
+  width: 24px;
+  margin-left: 12px;
+  object-fit: none;
+}
+
+.part {
+  display: none;
+}
+
+/* =========================== header section =========================== */
+header {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 70px;
+}
+
+.headerLogoImage {
+  height: 30px;
+  width: 114px;
+  cursor: pointer;
+}
+
+/* =========================== search page =========================== */
+#searchPagePart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: -32px;
+}
+
+.logoImageBox {
+  padding-top: 280px;
+}
+
+.logoImage {
+  width: 200px;
+  height: 100%;
+  cursor: pointer;
+}
+
+#searchBox {
+  padding-top: 24px;
+}
+
+#enterURLBox {
+  position: relative;
+}
+
+input {
+  width: 610px;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 67px;
+  padding-left: 30px;
+  padding-right: 150px;
+  background-color: #030617;
+  border: 2px solid #3662e3;
+  border-radius: 20px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem; /*16px*/
+  color: #f2f5f9;
+  outline-offset: 4px;
+}
+
+input::placeholder {
+  color: #364153;
+}
+
+#generateQRButton {
+  position: absolute;
+  top: 0px; /*1.5px*/
+  right: 0px;
+  /* height: 81%; */
+  margin: 5px;
+}
+
+/* =========================== loader page =========================== */
+#loaderPagePart {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================== qr code page =========================== */
+#qrCodePagePart {
+  padding-top: 96px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backgroundCircle {
+  background-color: #4e80ee33;
+  border-radius: 50%;
+  width: 310px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteBox {
+  background-color: #f2f5f9;
+  border-radius: 24px;
+  width: 244px;
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsBox {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px;
+}
+/* =========================== banner section =========================== */
+
+/* Largest devices such as tablets (1024px and down) */
+@media only screen and (max-width: 1024px) {
+  body {
+    background-position: right 20px top 80px;
+  }
+}
+
+/* Small devices such as small phones (768px and down) */
+@media only screen and (max-width: 768px) {
+  body {
+    background-position: right -235px top 80px;
+  }
+}
+
+/* Small devices such as small phones (630 down) */
+@media only screen and (max-width: 630px) {
+  input {
+    /* width: 378px; */
+    width: 100%;
+    max-width: none;
+    min-width: 328px;
+    padding-left: 16px;
+  }
+}
+
+/* Small devices such as small phones (640 down) */
+/* @media only screen and (max-width: 576px) {
+  input {
+    width: 228px;
+  }
+} */
+
+/* Small devices such as small phones (420px and down) */
+@media only screen and (max-width: 420px) {
+  /* input {
+    width: 178px;
+  } */
+  .buttonsBox{
+    flex-direction: column;
+  }
+}

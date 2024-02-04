@@ -1,0 +1,93 @@
+body {
+  min-height: 100vh;
+  background-color: var(--lotion);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.headerImage {
+  width: 50px;
+  height: 50px;
+}
+
+.headerTitle {
+  margin-left: 16px;
+  color: var(--dark-gray);
+}
+
+main{
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  border: 1px solid var(--steel-blue-gray);
+  border-radius: 12px;
+  background-color: var(--white);
+  margin: 32px;
+  padding: 16px;
+}
+
+.cardImage {
+  width: 500px;
+  border: 1px solid var(--steel-blue-gray);
+  border-radius: 12px;
+  margin-right: 32px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  color: var(--dark-gray);
+  padding: 0px 0px 16px 0px;
+}
+
+.cardDescription {
+  color: var(--charcoal-gray);
+  padding: 0px 0px 8px 0px;
+}
+
+.cardTechnology {
+  color: var(--charcoal-gray);
+  padding: 0px 0px 8px 0px;
+}
+
+.cardTool {
+  color: var(--charcoal-gray);
+  padding: 0px 0px 48px 0px;
+}
+
+.cardLinks{
+  display: flex;
+}
+
+.cardLink {
+  color: var(--white);
+  background-color: var(--charcoal-gray);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0px 16px 0px 0px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 32px 0px;
+}
+
+.footerText{
+  color: var(--charcoal-gray);
+}

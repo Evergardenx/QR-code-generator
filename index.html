@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ulises Cenoz">
+    <meta name="description" content="devChallenges solved by Ulises cenoz">
+    <meta name="keywords"
+        content=" Front-End, FrontEnd, FrontEnd, Web Developer, Software Engineer, devChallenges, HTML, CSS, JavaScript, Contact, Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title tag -->
+    <title>devChallenges</title>
+
+    <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="/rounded_logo.png">
+
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="../../styles/commonStyle.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- QRCode.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+        integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header id="headerPart" class="part">
+        <img class="headerLogoImage logoId" src="/logo-qr-generator.svg" alt="logo" />
+    </header>
+
+    <main>
+        <section id="searchPagePart" class="part">
+            <div class="logoImageBox">
+                <img class="logoImage logoId" src="/logo-qr-generator.svg" alt="logo" />
+            </div>
+            <div id="searchBox">
+                <div id="enterURLBox">
+                    <input type="url" id="urlInput" placeholder="Enter an url" />
+                    <button class="commonButton" id="generateQRButton">QR code</button>
+                </div>
+            </div>
+        </section>
+        <section id="loaderPagePart" class="part">
+            <img src="/Bean_Eater.svg" alt="laoding..."/>
+        </section>
+        <section id="qrCodePagePart" class="part">
+            <div class="backgroundCircle">
+                <div class="whiteBox">
+                    <div id="qrcode"></div>
+                </div>
+            </div>
+            <div class="buttonsBox">
+                <button class="commonButton" onClick="downloadQRCode()" >
+                    Download
+                    <img class="commonButtonImage" src="/download.PNG" alt=""/>
+                </button>
+                <button class="commonButton" onClick="copyQRCode()">
+                    Share
+                    <img class="commonButtonImage" src="/share.PNG" alt=""/>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
