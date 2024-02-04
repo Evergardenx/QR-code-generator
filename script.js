@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to redirect at starting page
     function redirectURL() {
-        const redirectURL = "http://127.0.0.1:5500/index.html";
+        const redirectURL = "/index.html";
         window.location.href = redirectURL;
     }
 
